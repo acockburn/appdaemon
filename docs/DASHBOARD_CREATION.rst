@@ -1483,6 +1483,8 @@ Optional Arguments:
 -  ``title2`` - a second line of title text
 -  ``on_attributes`` - a list of supported HA attributes to set as
    initial values for the light.
+- ``assume_state`` - set by default, but when set to `0`, the widget's feedback
+   will be solely based on the state of the entity
 
 Note that ``rgb_color`` and ``xy_color`` are not specified with list
 syntax as in Home Assistant scenes. See below for examples.
@@ -2150,6 +2152,9 @@ Optional Arguments:
 -  ``state_map``
 -  ``enabled`` - if set to 0 the switch cant be pressed but only shows status
 -  ``momentary`` - after the set amount of milliseconds the old state returns (momentary button)
+- ``assume_state`` - set by default, but when set to `0`, the widget's feedback
+   will be solely based on the state of the entity. Also when set to `0`, the momentary option above
+   will be disabled
 
 Style Arguments:
 ^^^^^^^^^^^^^^^^^^

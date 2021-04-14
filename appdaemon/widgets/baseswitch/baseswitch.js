@@ -100,6 +100,8 @@ function baseswitch(widget_id, url, skin, parameters)
 
     function toggle(self)
     {
+        if (self.parameters.assume_state === 0) return;
+
         if (self.state === self.parameters.state_active)
         {
             self.state = self.parameters.state_inactive;
